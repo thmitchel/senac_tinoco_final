@@ -11,6 +11,6 @@ server.get('/ping', (req, res) => {
 
 server.use(express.json())
 
-server.listen(5000, () => {
+server.listen(process.env.PORT || 3000, () => {
     console.log("Server On");
 });
